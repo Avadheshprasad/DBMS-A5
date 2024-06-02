@@ -1,0 +1,10 @@
+[+] Logical RelNode:
+!LogicalProject(FIRST_NAME=[$1])
+:  LogicalFilter(condition=[AND(>($0, 100), <($0, 150))])
+*    PTableScan(table=[[FILM_DB, actor]])
+
+[+] Physical RelNode:
+!PProjectFilter(FIRST_NAME=[$1])
+(  PTableScan(table=[[FILM_DB, actor]])
+
+Test passed :)
